@@ -78,10 +78,13 @@ a {
   opacity: 0.6;
 }
 
-/* HEADER */
-.site-header {
-
+.site-logo-link:hover {
+  opacity: 0.8;
 }
+
+
+/* HEADER */
+.site-header {}
 
 .site-header-wrapper {
   display: flex;
@@ -89,12 +92,6 @@ a {
   justify-content: space-between;
   padding: 18px 0px;
 }
-
-.site-logo-link:hover {
-  opacity: 0.8;
-}
-
-.site-logo {}
 
 .site-header-links {}
 
@@ -157,66 +154,210 @@ a {
 
 .site-features-wrapper {}
 
-.site-features-heading {}
+.site-features-heading {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: 100;
+  font-size: 40px;
+  line-height: 64px;
+  letter-spacing: -0.7px;
+  color: #2d314d;
+}
 
-.site-features-text {}
+.site-features-text {
+  margin-top: 0;
+  margin-bottom: 72px;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.29px;
+  color: #9597a5;
+  max-width: 635px;
+}
 
-.site-features-card-box {}
+.site-features-card-box {
+  display: flex;
+  align-items: center;
+}
 
 .site-features-card {}
 
-.site-features-card-img {}
+.site-features-card:not(:last-child) {
+  margin-right: 30px;
+}
 
-.site-features-card-title {}
+.site-features-card-img {
+  margin-top: 0;
+  margin-bottom: 40px;
+}
 
-.site-features-card-text {}
+.site-features-card-title {
+  margin-top: 0;
+  margin-bottom: 26px;
+  font-weight: 100;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.428571px;
+  color: #2d314d;
+
+}
+
+.site-features-card-text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.25px;
+  color: #9597a5;
+}
 
 
 /* SITE-ARTICLES */
 
 
-.site-articles {}
+.site-articles {
+  padding: 80px 0px;
+  background-color: #fafafa;
+}
 
 .site-articles-wrapper {}
 
-.site-articles-heading {}
+.site-articles-heading {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-weight: 100;
+  font-size: 40px;
+  line-height: 64px;
+  letter-spacing: -0.714286px;
+  color: #2d314d;
+}
 
-.site-articles-card-box {}
+.site-articles-card-box {
+  display: flex;
+}
 
-.site-articles-card {}
+.site-articles-card {
+  background-color: #fff;
+  border-radius: 5px;
+  color: #9597a5;
+}
+
+.site-articles-card:not(:last-child) {
+  margin-right: 30px;
+}
 
 .site-articles-card-img {}
 
-.copyright-text {}
+.site-articles-text-wrapper {
+  padding: 25px;
+}
 
-.site-articles-card-title {}
+.copyright-text {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 10px;
+  line-height: 18px;
+  letter-spacing: -0.16px;
 
-.site-articles-card-text {}
+}
+
+.site-articles-card-title {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.29px;
+  color: #2d314d;
+}
+
+.site-articles-card-text {
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: -0.2px;
+
+
+}
 
 
 /* SITE-FOOTER */
 
 
-.site-footer {}
+.site-footer {
+  background-color: #2d314d;
+  padding: 48px 0px;
+}
 
-.site-footer-wrapper {}
+.site-footer-wrapper {
+  display: flex;
+  align-items: center;
+}
 
-.site-logo-networks-link-box {}
+.site-logo-networks-link-box {
+  display: flex;
+  flex-direction: column;
+}
 
-.site-footer-networks {}
+.site-footer-networks {
+  display: flex;
+  align-items: center;
+  margin-top: 55px;
+  margin-bottom: 0;
+  margin-right: 130px;
+}
 
-.network-link {}
+.network-link path {
+  transition: 0.3s ease;
+}
+
+.network-link:hover path {
+  fill: #30c88f;
+}
+
+.network-link:not(:last-child) {
+  margin-right: 13px;
+}
 
 .network-icon {}
 
-.site-footer-links {}
+.site-footer-links {
+  display: flex;
+}
 
-.site-footer-links-list {}
+.site-footer-links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
-.site-footer-link-item {}
+.site-footer-links-list:not(:last-child) {
+  margin-right: 100px;
+}
 
-.site-footer-link {}
+.site-footer-link-item:not(:last-child) {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
 
-.site-footer-button-box {}
+.site-footer-link {
+  font-size: 15px;
+  line-height: 26px;
+  letter-spacing: -0.24px;
+}
 
-.site-footer-copyright {}
+.site-footer-link:hover {
+  color: #30c88f;
+}
+
+.site-footer-button-box {
+  margin-left: auto;
+}
+
+.site-footer-copyright {
+  color: #fff;
+  margin-top: 24px;
+  margin-bottom: 0;
+  font-size: 15px;
+  line-height: 26px;
+  text-align: right;
+  letter-spacing: -0.24px;
+  opacity: 0.5;
+}
